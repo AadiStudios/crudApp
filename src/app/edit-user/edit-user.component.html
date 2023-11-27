@@ -1,0 +1,55 @@
+<p>edit-user works!</p>
+{{this.id}}
+{{username}}
+
+<form  #editUserForm="ngForm" >
+    <div>
+        <table>
+        <tr>
+            <th>
+            <label for="username:">Username:</label>
+            </th>
+        <th>
+            <input type ="text" name="username" [(ngModel)]="username"/>
+        </th>    
+        
+        </tr>
+        <tr>
+        <th>    
+            <label for="name: "> Name: </label>
+        </th>    
+        <th>
+            <input type="text" name="name" [(ngModel)]="name"/>
+        </th>    
+        </tr>
+        <tr>
+        <th>
+            <label for ="email">Email :</label>
+        </th>    
+        <th>
+            <input type="text" name="email" [(ngModel)]="email"/>
+        </th>    
+        </tr>
+        <tr>
+        <th>
+            <label for = "phonenumber">Phone Number:</label>
+        </th>    
+        <th>
+            <input type="number" name="phonenumber" [(ngModel)]="phonenumber"/>
+        </th>
+        </tr>
+        <tr>
+            <th>
+                <label for="password">Password:</label>
+            </th>
+            <td>
+                <input type="text" name="password"[(ngModel)]="password"/>            </td>
+        </tr>
+        <tr>
+        <th class="submit">
+            <button  type="primary" (click)="editForm()"> Edit </button>
+        </th>
+        </tr>
+    </table>
+    </div>
+

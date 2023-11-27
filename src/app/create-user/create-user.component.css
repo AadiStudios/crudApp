@@ -1,0 +1,12 @@
+div{
+    margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding-left: 90px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-right: 80px;
+}
+.submit{
+    padding-left: 60%;
+}

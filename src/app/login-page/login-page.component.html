@@ -1,0 +1,35 @@
+<p>login-page works!</p>
+
+<form #loginPage="ngForm">
+<div>
+ 
+    <table>
+        <tr>
+        <th>
+        <label for="email">EMAIL:</label>
+        </th> 
+        <td>
+        <input type='text' name="email" ngModel/>
+        </td>    
+        </tr>
+        
+        <tr>
+        <th>
+        <label for="password">PASSWORD:</label>
+        </th>
+      
+        <td>
+        <input type="password" name="password" ngModel/>
+        </td>
+        </tr>
+      
+    </table>
+    </div>    
+    
+    <div>
+    <button (click)="loginForm()">SUBMIT</button>
+    <button>
+        <a routerLink="/create" routerLinkActive="active">Create New User</a>
+    </button>
+    </div>    
+</form>
